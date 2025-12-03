@@ -1,144 +1,88 @@
-/* Reset & global */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adaa Kurti – Indian Kurti Mart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
+<body>
+  <header class="site-header">
+    <div class="logo">Indian Kurti Mart</div>
+    <nav class="site-nav">
+      <a href="#">Home</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Collections</a>
+      <a href="#">Shop All</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+  <main class="product-page">
+    <div class="product-gallery">
+      <img src="https://images.pexels.com/photos/736809/pexels-photo-736809.jpeg" class="main-image" alt="Adaa Kurti">
 
-/* Header */
-.site-header {
-  background: #f8f8f8;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+      <div class="thumbs">
+        <img src="https://images.pexels.com/photos/736809/pexels-photo-736809.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/662250/pexels-photo-662250.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="">
+        <img src="https://images.pexels.com/photos/1312413/pexels-photo-1312413.jpeg" alt="">
+      </div>
+    </div>
 
-.site-nav a {
-  margin-left: 20px;
-  font-size: 14px;
-  color: #555;
-}
+    <div class="product-info">
+      <h1 class="product-title">Adaa Kurti</h1>
 
-/* Product page layout */
-.product-page {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 0 15px;
-  gap: 40px;
-}
+      <div class="price">
+        <span class="sale-price">₹699.00</span>
+        <span class="old-price">₹1,699.00</span>
+      </div>
 
-.product-gallery {
-  flex: 1 1 45%;
-}
+      <p class="short-desc">
+        Make a bold statement in our stunning Adaa Kurti featuring a rich purple shade with traditional Bandhani-inspired prints.
+      </p>
 
-.product-gallery .main-image {
-  width: 100%;
-  max-width: 500px;
-  object-fit: cover;
-  border: 1px solid #ddd;
-}
+      <form class="add-to-cart-form">
+        <label>Size:</label>
+        <select>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
 
-.product-gallery .thumbs {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
+        <label>Qty:</label>
+        <input type="number" min="1" value="1" />
 
-.product-gallery .thumbs img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  cursor: pointer;
-  border: 1px solid #ddd;
-}
+        <button class="btn">Add to Cart</button>
+      </form>
 
-.product-info {
-  flex: 1 1 45%;
-}
+      <section class="details">
+        <h2>Product Description</h2>
+        <p>
+          A rich purple kurti with all-over Bandhani-inspired prints. Soft fabric, perfect for casual or festive wear.
+        </p>
 
-.product-title {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
+        <h3>Fabric & Wash Care</h3>
+        <ul>
+          <li>Fabric: Cotton</li>
+          <li>Wash in cold water</li>
+          <li>Dry in shade</li>
+        </ul>
 
-.price {
-  margin-bottom: 15px;
-}
+        <h3>Manufacturing Info</h3>
+        <p>
+          Made in India<br>
+          Crafted by: Sangeeta Enterprises
+        </p>
+      </section>
+    </div>
+  </main>
 
-.sale-price {
-  font-size: 24px;
-  font-weight: bold;
-  color: #c2185b;
-}
+  <footer class="site-footer">
+    <p>© 2025 Indian Kurti Mart</p>
+  </footer>
+</body>
+</html>
 
-.old-price {
-  margin-left: 10px;
-  text-decoration: line-through;
-  color: #888;
-}
-
-.short-desc {
-  margin-bottom: 20px;
-}
-
-.add-to-cart-form {
-  margin-bottom: 30px;
-}
-
-.add-to-cart-form label {
-  margin-right: 10px;
-}
-
-.add-to-cart-form select,
-.add-to-cart-form input[type="number"] {
-  padding: 5px;
-  margin-right: 15px;
-}
-
-.btn {
-  padding: 10px 20px;
-  background: #c2185b;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.btn:hover {
-  background: #a11548;
-}
-
-/* Details section */
-.details h2,
-.details h3 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.details ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-/* Footer */
-.site-footer {
-  background: #f8f8f8;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
