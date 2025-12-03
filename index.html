@@ -1,88 +1,198 @@
+# index.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adaa Kurti – Indian Kurti Mart</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Kurti Mart - Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="logo">Indian Kurti Mart</div>
-    <nav class="site-nav">
-      <a href="#">Home</a>
-      <a href="#">New Arrivals</a>
-      <a href="#">Collections</a>
-      <a href="#">Shop All</a>
-      <a href="#">Cart</a>
-    </nav>
-  </header>
 
-  <main class="product-page">
-    <div class="product-gallery">
-      <img src="https://images.pexels.com/photos/736809/pexels-photo-736809.jpeg" class="main-image" alt="Adaa Kurti">
+<div class="announcement">🔥 End of Season Sale — Get 50% OFF Today Only!</div>
 
-      <div class="thumbs">
-        <img src="https://images.pexels.com/photos/736809/pexels-photo-736809.jpeg" alt="">
-        <img src="https://images.pexels.com/photos/662250/pexels-photo-662250.jpeg" alt="">
-        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="">
-        <img src="https://images.pexels.com/photos/1312413/pexels-photo-1312413.jpeg" alt="">
-      </div>
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Indian_Ethnic_Wear_Logo.png/600px-Indian_Ethnic_Wear_Logo.png" alt="Logo" />
+</header>
+
+<div class="container">
+    <div class="product-section">
+        <img src="https://i.pinimg.com/736x/23/0b/ae/230baee8d72c021941401c3a7818e9dc.jpg" alt="Kurti" />
+
+        <div class="product-details">
+            <h1>Adaa Stylish Kurti</h1>
+            <div class="price">₹499 <span>₹999</span></div>
+
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn buy-now">Checkout Now</button>
+
+            <div class="timer">⏳ Hurry! Offer ends in <b>02:14:56</b></div>
+        </div>
     </div>
 
-    <div class="product-info">
-      <h1 class="product-title">Adaa Kurti</h1>
-
-      <div class="price">
-        <span class="sale-price">₹699.00</span>
-        <span class="old-price">₹1,699.00</span>
-      </div>
-
-      <p class="short-desc">
-        Make a bold statement in our stunning Adaa Kurti featuring a rich purple shade with traditional Bandhani-inspired prints.
-      </p>
-
-      <form class="add-to-cart-form">
-        <label>Size:</label>
-        <select>
-          <option>XS</option>
-          <option>S</option>
-          <option>M</option>
-          <option>L</option>
-        </select>
-
-        <label>Qty:</label>
-        <input type="number" min="1" value="1" />
-
-        <button class="btn">Add to Cart</button>
-      </form>
-
-      <section class="details">
+    <div class="description">
         <h2>Product Description</h2>
-        <p>
-          A rich purple kurti with all-over Bandhani-inspired prints. Soft fabric, perfect for casual or festive wear.
-        </p>
-
-        <h3>Fabric & Wash Care</h3>
-        <ul>
-          <li>Fabric: Cotton</li>
-          <li>Wash in cold water</li>
-          <li>Dry in shade</li>
-        </ul>
-
-        <h3>Manufacturing Info</h3>
-        <p>
-          Made in India<br>
-          Crafted by: Sangeeta Enterprises
-        </p>
-      </section>
+        <p>Premium cotton kurti designed for comfort and daily wear. Perfect for office,
+        festive occasions, and casual outings.</p>
     </div>
-  </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Indian Kurti Mart</p>
-  </footer>
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-box">⭐️⭐️⭐️⭐️⭐️ — Loved the fabric and fit! — Priya</div>
+        <div class="review-box">⭐️⭐️⭐️⭐️ — Great value for money. — Aditi</div>
+        <div class="review-box">⭐️⭐️⭐️⭐️⭐️ — Looks exactly like the picture! — Neha</div>
+    </div>
+
+    <div class="suggestions">
+        <h2>You May Also Like</h2>
+        <div class="grid-3">
+            <div>
+                <img src="https://i.pinimg.com/736x/52/53/40/5253401eb59f2f85a511a7875b1e03c5.jpg" />
+                Kurti Set
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/cc/3c/33/cc3c330e3614d00f90e1aaff42ebc01b.jpg" />
+                Printed Kurti
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/736x/3d/87/64/3d8764f2b07f4eec1c9761ce7e2da52d.jpg" />
+                Designer Wear
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Indian Kurti Mart — All Rights Reserved
+</footer>
+
 </body>
 </html>
+```
+
+---
+
+# style.css
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.announcement {
+  background: #f8d200;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+header img {
+  height: 50px;
+}
+
+.product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-details h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-cart {
+  background: #ff007f;
+  color: white;
+}
+
+.buy-now {
+  background: #008000;
+  color: white;
+}
+
+.timer {
+  background: #ffecec;
+  padding: 12px;
+  border-left: 4px solid #ff3b3b;
+  font-size: 16px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.description h2,
+.reviews h2,
+.suggestions h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.review-box {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gri
+```
+
 
